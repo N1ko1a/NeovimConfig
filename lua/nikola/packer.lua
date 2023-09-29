@@ -6,8 +6,8 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
---fuzyfinder
+	
+  --fuzyfinder
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	  -- or                            , branch = '0.1.x',
@@ -15,8 +15,9 @@ return require('packer').startup(function(use)
   }
 
   use { "catppuccin/nvim", as = "catppuccin" }
-	
-  use("ThePrimeagen/harpoon")
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+
+   use("ThePrimeagen/harpoon")
 
  use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -45,5 +46,13 @@ return require('packer').startup(function(use)
   }
 
   use("mbbill/undotree")
-  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use("windwp/nvim-autopairs")
+  --Neovim tree
+  use("nvim-tree/nvim-tree.lua")
+--comments
+  use("numToStr/Comment.nvim")
+  use ('nvim-tree/nvim-web-devicons')
+
+  --Error handler
+  use("https://git.sr.ht/~whynothugo/lsp_lines.nvim")
 end)
