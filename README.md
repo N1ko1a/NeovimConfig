@@ -1,7 +1,7 @@
 Ovo je moja Neovim konfiguracija:
 <img src = "./Slike/FuzyNvim.png" width = 1000 hight = 900>
 
-#Plugins:
+# Plugins:
 
 Plugin Manager
 
@@ -90,7 +90,7 @@ Plugin Manager
 
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Show line modifications on left hand side
 
-#The majority of key mappings that i use:
+# The majority of key mappings that i use:
 
 - jk - exit insert mode
 
