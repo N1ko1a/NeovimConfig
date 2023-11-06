@@ -4,149 +4,149 @@ Ovo je moja Neovim konfiguracija:
 Plugins:
 Plugin Manager
 
-- folke/lazy.nvim - Amazing plugin manager
+- [folke/lazy.nvim] - Amazing plugin manager
   Dependency For Other Plugins
-- nvim-lua/plenary - Useful lua functions other plugins use
+- [nvim-lua/plenary] - Useful lua functions other plugins use
   Preferred Colorscheme
-- bluz71/vim-nightfly-guicolors
+- [bluz71/vim-nightfly-guicolors]
   Navigating Between Neovim Windows and Tmux
-- christoomey/vim-tmux-navigator
+- [christoomey/vim-tmux-navigator]
   Essentials
-- vim-scripts/ReplaceWithRegister - replace things with register with "gr"
+- [vim-scripts/ReplaceWithRegister] - replace things with register with "gr"
   File Explorer
-- nvim-tree/nvim-tree.lua
+- [nvim-tree/nvim-tree.lua]
   VS Code Like Icons
-- kyazdani42/nvim-web-devicons
+- [kyazdani42/nvim-web-devicons]
   Status Line
-- nvim-lualine/lualine.nvim
+- [nvim-lualine/lualine.nvim]
   Fuzzy Finder
-- nvim-telescope/telescope-fzf-native.nvim - Dependency for better performance
-- nvim-telescope/telescope.nvim - Fuzzy Finder
-- stevearc/dressing.nvim - select/input ui improvement
+- [nvim-telescope/telescope-fzf-native.nvim] - Dependency for better performance
+- [nvim-telescope/telescope.nvim] - Fuzzy Finder
+- [stevearc/dressing.nvim] - select/input ui improvement
   Marking Files With Prime's Harpoon
-- ThePrimeagen/harpoon
+- [ThePrimeagen/harpoon]
   Autocompletion
-- hrsh7th/nvim-cmp - Completion plugin
-- hrsh7th/cmp-buffer - Completion source for text in current buffer
-- hrsh7th/cmp-path - Completion source for file system paths
-- onsails/lspkind.nvim - Vs Code Like Icons for autocompletion
+- [hrsh7th/nvim-cmp] - Completion plugin
+- [hrsh7th/cmp-buffer] - Completion source for text in current buffer
+- [hrsh7th/cmp-path] - Completion source for file system paths
+- [onsails/lspkind.nvim] - Vs Code Like Icons for autocompletion
   Snippets
-- L3MON4D3/LuaSnip - Snippet engine
-- rafamadriz/friendly-snippets - Useful snippets for different languages
-- saadparwaiz1/cmp_luasnip - Completion source for snippet autocomplete
-- Managing & Installing Language Servers, Linters & Formatters
-- williamboman/mason.nvim
+- [L3MON4D3/LuaSnip] - Snippet engine
+- [rafamadriz/friendly-snippets] - Useful snippets for different languages
+- [saadparwaiz1/cmp_luasnip] - Completion source for snippet autocomplete
+  Managing & Installing Language Servers, Linters & Formatters
+- [williamboman/mason.nvim]
   LSP Configuration
-- williamboman/mason-lspconfig.nvim - Bridges gap b/w mason & lspconfig
-- neovim/nvim-lspconfig - Easy way to configure lsp servers
-- hrsh7th/cmp-nvim-lsp - Smart code autocompletion with lsp
+- [williamboman/mason-lspconfig.nvim] - Bridges gap b/w mason & lspconfig
+- [neovim/nvim-lspconfig] - Easy way to configure lsp servers
+- [hrsh7th/cmp-nvim-lsp] - Smart code autocompletion with lsp
   Formatting & Linting
-- stevearc/conform.nvim - Easy way to configure formatters
-- mfussenegger/nvim-lint - Easy way to configure linters
-- WhoIsSethDaniel/mason-tool-installer.nvim - Auto install linters & formatters on startup
+- [stevearc/conform.nvim] - Easy way to configure formatters
+- [mfussenegger/nvim-lint] - Easy way to configure linters
+- [WhoIsSethDaniel/mason-tool-installer.nvim] - Auto install linters & formatters on startup
   Comments
-- numToStr/Comment.nvim - toggle comments with "gc"
-- JoosepAlviste/nvim-ts-context-commentstring - Requires treesitter
+- [numToStr/Comment.nvim] - toggle comments with "gc"
+- [JoosepAlviste/nvim-ts-context-commentstring] - Requires treesitter
   Treesitter Syntax Highlighting, Autoclosing & Text Objects
-- nvim-treesitter/nvim-treesitter - Treesitter configuration
-- nvim-treesitter/nvim-treesitter-textobjects - Treesitter configuration
-- windwp/nvim-autopairs - Autoclose brackets, parens, quotes, etc...
-- windwp/nvim-ts-autotag - Autoclose tags
+- [nvim-treesitter/nvim-treesitter] - Treesitter configuration
+- [nvim-treesitter/nvim-treesitter-textobjects] - Treesitter configuration
+- [windwp/nvim-autopairs] - Autoclose brackets, parens, quotes, etc...
+- [windwp/nvim-ts-autotag] - Autoclose tags
   Git
-- lewis6991/gitsigns.nvim - Show line modifications on left hand side
+- [lewis6991/gitsigns.nvim] - Show line modifications on left hand side
 
 The majority of key mappings that i use:
 
-jk - exit insert mode
+- jk - exit insert mode
 
-nh - clear search highlight
+- nh - clear search highlight
 
-space + sv - split window vertically
+- space + sv - split window vertically
 
-space + sh - split window horizontally
+- space + sh - split window horizontally
 
-space + se - make split windows equal width and height
+- space + se - make split windows equal width and height
 
-space + sx - close current split window
+- space + sx - close current split window
 
-gR - show definition, references
+- gR - show definition, references
 
-gD - go to declaration
+- gD - go to declaration
 
-gd - show lsp definitons
+- gd - show lsp definitons
 
-gi - show lsp implementation
+- gi - show lsp implementation
 
-gt - show lsp type definiton
+- gt - show lsp type definiton
 
-space + ca - see available code actions
+- space + ca - see available code actions
 
-space + rn - smart rename
+- space + rn - smart rename
 
-space + D - show diagnostics for file
+- space + D - show diagnostics for file
 
-space + d - show diagnostics for line
+- space + d - show diagnostics for line
 
-[d - jump to previous diagnostic in buffer
+- [d - jump to previous diagnostic in buffer
 
-]d - jump to next diagnostic in buffer
+- ]d - jump to next diagnostic in buffer
 
-K - show documentation what is under cursor
+- K - show documentation what is under cursor
 
-space + rs - mapping to restart lsp if necessary
+- space + rs - mapping to restart lsp if necessary
 
-space + wr - restore last workspace session for current directory
+- space + wr - restore last workspace session for current directory
 
-space + ws - save workspace session for current working directory
+- space + ws - save workspace session for current working directory
 
-gcc - comment line
+- gcc - comment line
 
-gc - comment when in visual mode
+- gc - comment when in visual mode
 
-space + mp - formatting file
+- space + mp - formatting file
 
-space + a - Mark file with harpoon
+- space + a - Mark file with harpoon
 
-ctrl + e - toggle harpoon quick menu
+- ctrl + e - toggle harpoon quick menu
 
-ctrl + v - go to the first harpoon mark
+- ctrl + v - go to the first harpoon mark
 
-ctrl + b - go to the second harpoon mark
+- ctrl + b - go to the second harpoon mark
 
-ctrl + n - go to the third harpoon mark
+- ctrl + n - go to the third harpoon mark
 
-ctrl + m - go to the fourth harpoon mark
+- ctrl + m - go to the fourth harpoon mark
 
-space + hn - go to next harpoon mark
+- space + hn - go to next harpoon mark
 
-space + hp - go to previous harpoon mark
+- space + hp - go to previous harpoon mark
 
-ctrl + h/j/k/l - split window navigation
+- ctrl + h/j/k/l - split window navigation
 
-space + l - Trigger linting for current file
+- space + l - Trigger linting for current file
 
-ctrl + k - previous suggestion
+- ctrl + k - previous suggestion
 
-ctrl + j - next suggestion
+- ctrl + j - next suggestion
 
-ctrl + s - show completion suggestions
+- ctrl + s - show completion suggestions
 
-ctrl + e - close completion window
+- ctrl + e - close completion window
 
-space + ee - toggle file explorer
+- space + ee - toggle file explorer
 
-space + ef - toggle file explorer on current file
+- space + ef - toggle file explorer on current file
 
-space + ec - collapse file explorer
+- space + ec - collapse file explorer
 
-space + er - refresh file explorer
+- space + er - refresh file explorer
 
-space + ff - Fuzzy find files in cwd
+- space + ff - Fuzzy find files in cwd
 
-space + fr - Fuzzy find recent files
+- space + fr - Fuzzy find recent files
 
-space + fs - Find string in cwd
+- space + fs - Find string in cwd
 
-space + fc - Find string under cursor in cwd
+- space + fc - Find string under cursor in cwd
 
-space + sm - Maximize/minimize a split
+- space + sm - Maximize/minimize a split
