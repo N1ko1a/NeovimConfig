@@ -1,5 +1,5 @@
 Ovo je moja Neovim konfiguracija:
-<img src = "./Slike/FuzyNvim.png" width = 1000 hight = 900>
+<img src = "./Slike/FuzyNvim1.png" width = 1000 hight = 900>
 
 # Plugins:
 
