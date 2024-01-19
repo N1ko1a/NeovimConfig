@@ -13,6 +13,12 @@ opt.autoindent = true -- copy indent from current line when starting new one
 -- line wrapping
 opt.wrap = true -- disable line wrapping
 
+--undotree
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
+
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
@@ -38,5 +44,4 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
--- turn off swapfile
-opt.swapfile = false
+-- turn off swapfilept.swapfile = false
