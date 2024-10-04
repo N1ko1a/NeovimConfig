@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		"neovim/nvim-lspconfig",
 	},
 	config = function()
 		-- import mason
@@ -27,7 +28,9 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"tsserver",
+				"ts_ls",
+				"gopls",
+				"clangd",
 				"html",
 				"cssls",
 				"tailwindcss",
@@ -47,6 +50,8 @@ return {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"eslint_d", -- js linter
+				"eslint", -- js linter
+				"ast_grep", -- go
 			},
 		})
 	end,

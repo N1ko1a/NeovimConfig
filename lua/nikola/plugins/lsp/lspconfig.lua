@@ -88,8 +88,19 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure typescript server with plugin
-		lspconfig["tsserver"].setup({
+		-- configure c server
+		lspconfig["clangd"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		-- configure java server
+		lspconfig["java_language_server"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+		-- configure ts_ls server with plugin
+		lspconfig["ts_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
